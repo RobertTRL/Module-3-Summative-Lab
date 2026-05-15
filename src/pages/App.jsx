@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import HeroGeometric from './components/Background'
+import HeroGeometric from '../components/GeometricHero'
 
 function App() {
 
