@@ -8,7 +8,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <nav className='navigation'>
-        <NavLink to='/'> Home </ NavLink>
+        <NavLink to='/'>Home</ NavLink>
       </nav>
       <Routes>
         <Route index path='/'element={<App />} />

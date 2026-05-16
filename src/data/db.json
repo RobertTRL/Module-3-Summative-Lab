@@ -1,0 +1,153 @@
+{
+  "store_info": [
+    {
+      "id": 1,
+      "name": "Coffee R Us",
+      "description": "The go to store for coffee",
+      "phone_number": "555-5555",
+      "currency": "KES"
+    }
+  ],
+  "coffee": [
+    {
+      "id": 1,
+      "name": "Vanilla Bean",
+      "description": "Medium Roast, nutty flavor",
+      "origin": "Colombia",
+      "price": 1294
+    },
+    {
+      "id": 2,
+      "name": "House Blend",
+      "description": "Dark Roast, rich flavor",
+      "origin": "Vietnam",
+      "price": 1553
+    },
+    {
+      "id": 3,
+      "name": "Ethiopian Sunrise",
+      "description": "Light Roast, bright and fruity",
+      "origin": "Ethiopia",
+      "price": 1812
+    },
+    {
+      "id": 4,
+      "name": "Midnight Espresso",
+      "description": "Dark Roast, smoky and bold",
+      "origin": "Brazil",
+      "price": 1682
+    },
+    {
+      "id": 5,
+      "name": "Golden Hour",
+      "description": "Medium Roast, caramel and citrus notes",
+      "origin": "Costa Rica",
+      "price": 1941
+    },
+    {
+      "id": 6,
+      "name": "Jasmine Mist",
+      "description": "Light Roast, floral and tea-like",
+      "origin": "Kenya",
+      "price": 2071
+    },
+    {
+      "id": 7,
+      "name": "Cocoa Reserve",
+      "description": "Medium-Dark Roast, chocolatey and smooth",
+      "origin": "Peru",
+      "price": 1747
+    },
+    {
+      "id": 8,
+      "name": "Sumatra Storm",
+      "description": "Dark Roast, earthy and full-bodied",
+      "origin": "Indonesia",
+      "price": 1424
+    },
+    {
+      "id": 9,
+      "name": "Honey Harvest",
+      "description": "Medium Roast, sweet and balanced",
+      "origin": "Guatemala",
+      "price": 1618
+    },
+    {
+      "id": 10,
+      "name": "Yirgacheffe Select",
+      "description": "Light Roast, wine-like and complex",
+      "origin": "Ethiopia",
+      "price": 2200
+    },
+    {
+      "id": 11,
+      "name": "Black Canopy",
+      "description": "Dark Roast, intense and bittersweet",
+      "origin": "Uganda",
+      "price": 1812
+    },
+    {
+      "id": 12,
+      "name": "Blue Mountain Blend",
+      "description": "Medium Roast, mild and creamy",
+      "origin": "Jamaica",
+      "price": 2588
+    },
+    {
+      "id": 13,
+      "name": "Spice Trader",
+      "description": "Medium-Dark Roast, spiced and aromatic",
+      "origin": "India",
+      "price": 1682
+    },
+    {
+      "id": 14,
+      "name": "Cloud Nine",
+      "description": "Light Roast, clean and delicate",
+      "origin": "Panama",
+      "price": 2330
+    },
+    {
+      "id": 15,
+      "name": "Timber Ridge",
+      "description": "Dark Roast, robust and woody",
+      "origin": "Mexico",
+      "price": 1488
+    },
+    {
+      "id": 16,
+      "name": "Hazelnut Hills",
+      "description": "Medium Roast, nutty and sweet",
+      "origin": "Honduras",
+      "price": 1553
+    },
+    {
+      "id": 17,
+      "name": "Velvet Underground",
+      "description": "Medium-Dark Roast, rich and velvety",
+      "origin": "Brazil",
+      "price": 1747
+    },
+    {
+      "id": 18,
+      "name": "Island Breeze",
+      "description": "Light Roast, tropical and juicy",
+      "origin": "Hawaii",
+      "price": 2847
+    },
+    {
+      "id": 19,
+      "name": "Iron Press",
+      "description": "Dark Roast, bold and full-bodied",
+      "origin": "Colombia",
+      "price": 1553
+    },
+    {
+      "id": 20,
+      "name": "Sunset Dulce",
+      "description": "Medium Roast, smooth with hints of brown sugar",
+      "origin": "El Salvador",
+      "price": 1876
+    }
+  ]
+}
