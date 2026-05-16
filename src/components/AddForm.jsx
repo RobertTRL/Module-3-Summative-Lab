@@ -79,7 +79,7 @@ export default function AddForm() {
     return (
         <div className="add-form">
             <form onSubmit={handleSubmit}>
-                <h2>Add Product</h2>
+                <h2>Add Coffee</h2>
                 <label htmlFor={nameid}>Name</label>
                 <input type="text" id={nameid} placeholder="Enter product name" name="name" value={details.name} onChange={handleChange} onBlur={handleBlur} />
                 <p className={touched.name && !details.name ? "visible" : ""}>Please enter a name</p>
