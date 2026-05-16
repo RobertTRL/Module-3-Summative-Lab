@@ -1,5 +1,5 @@
 # Summative Lab Showcase #
-## Intorduction ##
+## Introduction ##
 A React web application built with Vite. It uses json-server to mock a backend REST API for data management.
 
 ## Getting Started ##
