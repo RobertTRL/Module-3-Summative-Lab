@@ -3,15 +3,18 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route , Link, NavLink, Outlet } from 'react-router-dom'
 import './styles/index.css'
 import App from './pages/App.jsx'
+import ShopPage from './pages/ShopPage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <nav className='navigation'>
         <NavLink to='/'>Home</ NavLink>
+        <NavLink to='/shop'>Shop</ NavLink>
       </nav>
       <Routes>
         <Route index path='/'element={<App />} />
+        <Route path='/shop' element={<ShopPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
