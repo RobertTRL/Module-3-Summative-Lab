@@ -1,6 +1,6 @@
 import SearchBar from "../components/SearchBar"
 import ProductList from "../components/ProductList"
-import { ProductsContext } from "../context/ProductsContext"
+import { ProductsProvider } from "../context/ProductsContext"
 import { useState } from "react"
 import '../styles/ShopPage.css'
 
@@ -11,10 +11,8 @@ export default function ShopPage() {
     })
     return (
         <div className="shop-page">
-            <ProductsContext>
             <SearchBar searchValue={searchValue} setSearchValue={setSearchValue} />
-            <ProductList />
-            </ProductsContext>
+            <ProductList searchValue={searchValue} />
         </div>
     )
 }

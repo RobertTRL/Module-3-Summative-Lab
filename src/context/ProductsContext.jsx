@@ -1,9 +1,10 @@
-import { useState, useEffect, createContext } from 'react'
+import { useState, useEffect, createContext, useContext } from 'react'
 
-export function ProductsContext({ children }) {
-    const productContext = createContext()
+const ProductsContext = createContext()
 
-    const [productData, setProductData] = useState([])
+export function ProductsProvider({ children }) {
+
+    const [productsData, setProductsData] = useState([])
 
     useEffect(() => {
         fetch('http://localhost:3001/coffee')
@@ -11,19 +12,18 @@ export function ProductsContext({ children }) {
                 if (!res.ok) {
                     throw new Error('Something went wrong')
                 } else { return res.json() }})
-            .then(res => setProductData(res))
+            .then(res => setProductsData(res))
             .catch(err => console.log(err))
     }, [])
 
     return (
-        <productContext.Provider value={{ productData, setProductData }}>
+        <ProductsContext.Provider value={{ productsData, setProductsData }}>
             {children}
-        </productContext.Provider>
+        </ProductsContext.Provider>
     )
 }
 
 export function useProducts() {
     const context = useContext(ProductsContext)
     return context
-
 }
