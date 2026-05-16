@@ -1,5 +1,6 @@
 # Summative Lab Showcase #
-A React web application built with Vite, featuring 3D rendering capabilities using Three.js/React Three Fiber and animations with Framer Motion. It uses json-server to mock a backend REST API for data management.
+## Intorduction ##
+A React web application built with Vite. It uses json-server to mock a backend REST API for data management.
 
 ## Getting Started ##
 ### Prerequisites ###
