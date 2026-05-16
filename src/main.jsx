@@ -12,8 +12,11 @@ createRoot(document.getElementById('root')).render(
     <BrowserRouter>
      <ProductsProvider>
       <nav className='navigation'>
+        <h3>Robert's Coffee Shop</h3>
+        <div className='nav-links'>
         <NavLink to='/'>Home</ NavLink>
         <NavLink to='/shop'>Shop</ NavLink>
+        </div>
       </nav>
       <Routes>
         <Route index path='/'element={<App />} />

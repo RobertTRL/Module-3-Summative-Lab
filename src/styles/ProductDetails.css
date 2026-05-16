@@ -1,6 +1,7 @@
 .product-detail {
   min-height: 100vh;
-  padding: 2rem 3rem;
+  padding: 5rem 3rem;
+  margin-top: 1rem;
 }
 
 .back-btn {
