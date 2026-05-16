@@ -7,6 +7,9 @@ import App from './pages/App.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
+      <nav className='navigation'>
+        <NavLink to='/'> Home </ NavLink>
+      </nav>
       <Routes>
         <Route index path='/'element={<App />} />
       </Routes>
