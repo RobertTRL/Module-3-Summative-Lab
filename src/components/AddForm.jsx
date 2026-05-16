@@ -1,4 +1,4 @@
-import { use, useId , useState } from "react"
+import { useId , useState } from "react"
 import { useProducts } from "../context/ProductsContext"
 
 export default function AddForm() {
@@ -77,21 +77,25 @@ export default function AddForm() {
     }
 
     return (
-        <div className="add-form" onSubmit={handleSubmit}>
-            <form>
+        <div className="add-form">
+            <form onSubmit={handleSubmit}>
                 <h2>Add Product</h2>
                 <label htmlFor={nameid}>Name</label>
                 <input type="text" id={nameid} placeholder="Enter product name" name="name" value={details.name} onChange={handleChange} onBlur={handleBlur} />
                 <p className={touched.name && !details.name ? "visible" : ""}>Please enter a name</p>
+                
                 <label htmlFor={descriptionid}>Description</label>
                 <input type="text" id={descriptionid} placeholder="Enter product description" name="description" value={details.description} onChange={handleChange} onBlur={handleBlur} />
                 <p className={touched.description && !details.description ? "visible" : ""}>Please enter a description</p>
+                
                 <label htmlFor={countryid}>Country of Origin</label>
                 <input type="text" id={countryid} placeholder="Enter country of origin" name="origin" value={details.origin} onChange={handleChange} onBlur={handleBlur} />
                 <p className={touched.origin && !details.origin ? "visible" : ""}>Please enter a country of origin</p>
+                
                 <label htmlFor={priceid}>Price in Ksh</label>
                 <input type="number" id={priceid} placeholder="Enter product price in Ksh" name="price" value={details.price} onChange={handleChange} onBlur={handleBlur} />
-                <p className={touched.origin && !details.origin ? "visible" : ""}>Please enter a price</p>
+                <p className={touched.price && !details.price ? "visible" : ""}>Please enter a price</p>
+                
                 <button type="submit" className="submit-button">Add Product</button>
             </form>
 

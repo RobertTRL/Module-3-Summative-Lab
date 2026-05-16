@@ -1,4 +1,4 @@
-import { useId , useState , useEffect } from "react"
+import { useId , useState } from "react"
 import { useProducts } from "../context/ProductsContext"
 
 export default function EditSection() {

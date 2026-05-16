@@ -1,8 +1,5 @@
-import AddForm  from "../components/AddForm.jsx"
-import DeleteSection from "../components/DeleteSection.jsx"
-import EditSection from "../components/EditSection.jsx"
 import '../styles/AdminPanel.css'
-import { Link , Outlet , NavLink } from "react-router-dom"
+import { Outlet , NavLink } from "react-router-dom"
 
 export default function AdminPanel() {
     return (

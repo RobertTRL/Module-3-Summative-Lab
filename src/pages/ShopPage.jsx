@@ -1,6 +1,5 @@
 import SearchBar from "../components/SearchBar"
 import ProductList from "../components/ProductList"
-import { ProductsProvider } from "../context/ProductsContext"
 import { useState } from "react"
 import '../styles/ShopPage.css'
 
