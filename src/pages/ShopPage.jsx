@@ -2,6 +2,7 @@ import SearchBar from "../components/SearchBar"
 import ProductList from "../components/ProductList"
 import { ProductsContext } from "../context/ProductsContext"
 import { useState } from "react"
+import '../styles/ShopPage.css'
 
 export default function ShopPage() {
     const [searchValue, setSearchValue] = useState({

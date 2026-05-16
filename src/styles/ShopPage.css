@@ -1,0 +1,47 @@
+.search-bar {
+  width: clamp(280px, 50%, 700px);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 6px 6px 14px;
+  border: 0.5px solid #aaa; 
+  border-radius: 10px;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.search-input {
+  flex: 1;          
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  min-width: 0;      
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-left: 2px solid #888888;  
+  flex-shrink: 0;                   
+}
+
+.select label {
+  font-size: 13px;
+  color: #666;
+  white-space: nowrap;
+}
+
+.select select {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 13px;
+  cursor: pointer;
+}
