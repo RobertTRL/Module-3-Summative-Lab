@@ -1,6 +1,14 @@
+import { useParams, useNavigate } from "react-router-dom"
+
 export default function ProductCard({ coffee }) {
+    const navigate = useNavigate()
+
+    function handleClick() {
+        navigate(`/shop/${coffee.id}`)
+    }
+
     return (
-        <div className="product-card">
+        <div className="product-card" onClick={handleClick}> 
             <img src={coffee.image} alt={coffee.name} />
             <div className="product-card__body">
                 <span className="product-card__origin">{coffee.origin}</span>
