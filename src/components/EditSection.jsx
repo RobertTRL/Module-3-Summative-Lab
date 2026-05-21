@@ -33,7 +33,7 @@ export default function EditSection() {
             body: JSON.stringify({
                 name: details.name,
                 description: details.description,
-                price: details.price,
+                price: Number(details.price),
                 origin: details.origin
             })
         })
@@ -43,7 +43,11 @@ export default function EditSection() {
                 }
                 return res.json()
             })
-            .then(data => setProductsData(productsData.map(p => p.id == productid ? data : p)))
+            .then(data => {
+                setProductsData(productsData.map(p => String(p.id) === String(productid) ? data : p))
+                setDetails(data)
+        
+            })
             .catch(err => console.log(err))
     }    
 

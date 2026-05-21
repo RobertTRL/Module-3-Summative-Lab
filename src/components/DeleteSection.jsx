@@ -18,7 +18,7 @@ export default function DeleteSection() {
                 if (!res.ok) {
                     throw new Error("Something went wrong")
                 }
-                setProductsData(productsData.filter(product => product.id !== productid))
+                setProductsData(productsData.filter(product => String(product.id) !== String(productid)))
                 setProductid(1)
             })
             .catch(err => console.log(err))
